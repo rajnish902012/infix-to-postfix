@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<ctype.h>
-char stack[20];
+char stack[22];
 int top = -1;
 void push(char x)
 {
@@ -27,12 +27,12 @@ int priority(char x)
 
 int main()
 {
-    char exp[20];
+    char exp[22];
     char *e, x;
-    printf("\n\n\t ENTER THE INFIX EXPRESSION : ");
+    printf("\n\n\t ENTER THE INFIX EXPRESSION.! : ");
     scanf("%s",exp);
     e = exp;
-    printf("\n\n\t THE POSTFIX EXPRESSION : ");
+    printf("\n\n\t THE POSTFIX EXPRESSION.! : ");
     while(*e != '\0')
     {
         if(isalnum(*e))
